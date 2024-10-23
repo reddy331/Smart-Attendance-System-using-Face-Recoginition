@@ -76,20 +76,6 @@ This project uses Python's `face_recognition` and `OpenCV` libraries to build a 
 3. **Image Processing:**
    - The `cv2.imread()` function reads images, which are then converted to RGB using OpenCV and encoded using `face_recognition.face_encodings()`. These encodings are stored along with the respective student IDs.
 
-## File Structure
-
-\`\`\`
-face-recognition-attendance/
-│
-├── Images/                   # Folder containing student images
-│   ├── student1.jpg
-│   └── student2.jpg
-│
-├── encode_faces.py            # Script to encode faces and save them
-├── serviceAccountKey.json     # Firebase service account credentials (not included for security reasons)
-├── EncodeFile.p               # Saved pickle file with face encodings and student IDs
-├── README.md                  # Project documentation
-\`\`\`
 
 ## Firebase Integration
 To enable Firebase in the system:
@@ -99,5 +85,3 @@ To enable Firebase in the system:
 
 Ensure you have enabled these services in Firebase and updated the project with your credentials.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
